@@ -56,18 +56,18 @@
   };
 </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="先通过几张图片来大致了解一下 Git 的工作原理吧！  介绍 工作区：就是你在电脑里能看到的目录。 暂存区：英文叫 stage, 或 index。一般存放在 “.git 目录下” 下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。 版本库：工作区有一个隐藏目录. git，这个不算工作区，而是 Git 的版本库。">
 <meta name="keywords" content="一个平凡的web开发者，在自己喜欢的行业上一直努力，希望会遇到更多志同道合的朋友。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="Git 常用指令汇总">
 <meta property="og:url" content="http://nanyanbai.github.io/2019/10/11/hello-world/index.html">
 <meta property="og:site_name" content="岩柏的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="先通过几张图片来大致了解一下 Git 的工作原理吧！  介绍 工作区：就是你在电脑里能看到的目录。 暂存区：英文叫 stage, 或 index。一般存放在 “.git 目录下” 下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。 版本库：工作区有一个隐藏目录. git，这个不算工作区，而是 Git 的版本库。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-11T01:22:34.711Z">
+<meta property="og:updated_time" content="2019-10-11T08:48:35.323Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Git 常用指令汇总">
+<meta name="twitter:description" content="先通过几张图片来大致了解一下 Git 的工作原理吧！  介绍 工作区：就是你在电脑里能看到的目录。 暂存区：英文叫 stage, 或 index。一般存放在 “.git 目录下” 下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。 版本库：工作区有一个隐藏目录. git，这个不算工作区，而是 Git 的版本库。">
   <link rel="canonical" href="http://nanyanbai.github.io/2019/10/11/hello-world/">
 
 
@@ -82,7 +82,7 @@
   };
 </script>
 
-  <title>Hello World | 岩柏的博客</title>
+  <title>Git 常用指令汇总 | 岩柏的博客</title>
   
 
 
@@ -280,7 +280,7 @@
       <meta itemprop="name" content="岩柏的博客">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hello World
+        <h1 class="post-title" itemprop="name headline">Git 常用指令汇总
 
           
         </h1>
@@ -296,12 +296,16 @@
                 
               
 
-              <time title="创建时间：2019-10-11 09:22:34" itemprop="dateCreated datePublished" datetime="2019-10-11T09:22:34+08:00">2019-10-11</time>
+              <time title="创建时间：2019-10-11 09:22:34 / 修改时间：16:48:35" itemprop="dateCreated datePublished" datetime="2019-10-11T09:22:34+08:00">2019-10-11</time>
             </span>
+          
+            
+
+            
           
 
           
-            <span id="/2019/10/11/hello-world/" class="post-meta-item leancloud_visitors" data-flag-title="Hello World" title="阅读次数">
+            <span id="/2019/10/11/hello-world/" class="post-meta-item leancloud_visitors" data-flag-title="Git 常用指令汇总" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -341,19 +345,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>先通过几张图片来大致了解一下 Git 的工作原理吧！</p>
+<ul>
+<li><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><ul>
+<li><strong>工作区</strong>：就是你在电脑里能看到的目录。</li>
+<li><strong>暂存区</strong>：英文叫 stage, 或 index。一般存放在 “.git 目录下” 下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</li>
+<li><strong>版本库</strong>：工作区有一个隐藏目录. git，这个不算工作区，而是 Git 的版本库。</li>
+</ul>
+</li>
+</ul>
 
     </div>
 
@@ -414,7 +414,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
