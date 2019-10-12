@@ -266,7 +266,7 @@
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://nanyanbai.github.io/2019/10/11/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://nanyanbai.github.io/2019/10/12/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="岩柏">
@@ -280,7 +280,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2019/10/11/hello-world/" class="post-title-link" itemprop="url">Git 常用指令汇总</a>
+            <a href="/2019/10/12/hello-world/" class="post-title-link" itemprop="url">Git学习知识归纳</a>
           
         </h1>
 
@@ -295,16 +295,29 @@
                 
               
 
-              <time title="创建时间：2019-10-11 09:22:34 / 修改时间：16:48:35" itemprop="dateCreated datePublished" datetime="2019-10-11T09:22:34+08:00">2019-10-11</time>
+              <time title="创建时间：2019-10-12 15:46:10 / 修改时间：17:40:56" itemprop="dateCreated datePublished" datetime="2019-10-12T15:46:10+08:00">2019-10-12</time>
             </span>
           
             
 
             
           
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
-            <span id="/2019/10/11/hello-world/" class="post-meta-item leancloud_visitors" data-flag-title="Git 常用指令汇总" title="阅读次数">
+            <span id="/2019/10/12/hello-world/" class="post-meta-item leancloud_visitors" data-flag-title="Git学习知识归纳" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -322,7 +335,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/10/11/hello-world/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/10/11/hello-world/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/2019/10/12/hello-world/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/10/12/hello-world/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -336,15 +349,58 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>先通过几张图片来大致了解一下 Git 的工作原理吧！</p>
-<ul>
-<li><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><ul>
-<li><strong>工作区</strong>：就是你在电脑里能看到的目录。</li>
-<li><strong>暂存区</strong>：英文叫 stage, 或 index。一般存放在 “.git 目录下” 下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</li>
-<li><strong>版本库</strong>：工作区有一个隐藏目录. git，这个不算工作区，而是 Git 的版本库。</li>
+          <hr>
+<blockquote>
+<h1 id="盛年不重来，一日难再晨。及时当勉励，岁月不待人"><a href="#盛年不重来，一日难再晨。及时当勉励，岁月不待人" class="headerlink" title="盛年不重来，一日难再晨。及时当勉励，岁月不待人"></a>盛年不重来，一日难再晨。及时当勉励，岁月不待人</h1></blockquote>
+<h2 id="Git三个区"><a href="#Git三个区" class="headerlink" title="Git三个区"></a>Git三个区</h2><ul>
+<li>工作区：我们书写代码的地方，工作的目录就叫工作区</li>
+<li>暂存区：暂时存储的区域，在git中，代码无法直接从工作区提交到仓库区，而是需要先从工作区添加到暂存区，然后才能从暂存区提交到仓库区。 暂存区的目的就是避免误操作</li>
+<li>本地仓库区：将保持在暂存区域的内容永久转储到Git仓库中，生成版本号。生成版本号之后，就可以任何的回退到某一个具体的版本</li>
 </ul>
+<h2 id="Git命令操作"><a href="#Git命令操作" class="headerlink" title="Git命令操作"></a>Git命令操作</h2><ol>
+<li><p>本地库初始化</p>
+<ul>
+<li><p>首先用cd的方式进入工作目录下</p>
+</li>
+<li><p>然后创建一个项目名称</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir  demoProject</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>比如我们现在创建的demoProject是项目名称，要切换到项目根目录下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd demoProject</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对本地项目进行git的初始化, 把这个目录变成Git可以管理的仓库：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git  init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如何查看被隐藏的文件呢? 使用以下命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -lA</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
+<blockquote>
+<h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><ul>
+<li>瞬间Git就把仓库建好了，而且告诉你是一个空的仓库，可以在当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的，对.git这个文件不能删除，也要胡乱修改。</li>
+<li>如果没有看到.git这个目录， 不要慌张，那是因为这个目录默认是隐藏的</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<ol start="2">
+<li><p>设置签名</p>
+<ul>
+<li><p>形式<br>用户名： test<br>Email地址：<a href="mailto:test@gmail.com" target="_blank" rel="noopener">test@gmail.com</a></p>
+</li>
+<li><p>作用： 区分不同开发人员的身份</p>
+</li>
+<li><p>辨析：这里设置的签名和登录远程库（代码托管中心）的账号，密码没有任何关系</p>
+</li>
+<li><p>命令<br>项目级别/仓库级别：仅在当前本地库范围内有效<br>git config user.name  test_pro<br>git config user.email <a href="mailto:test_pro@gmail.com" target="_blank" rel="noopener">test_pro@gmail.com</a><br>信息保存位置：./git/config文件<br>查看命令：cat .git/config<br>系统用户级别： 登录当前操作系统的用户范围<br>git  config –global user.anme_glb<br>git config –global  user.email <a href="mailto:test_glb@gmail.com" target="_blank" rel="noopener">test_glb@gmail.com</a><br>级别优先级：<br>（1）就近原则：项目级别优先于系统用户级别，二者都有时采用项目级别的签名<br>（2）如果只有系统级别的签名，就以系统用户级别的签名为准<br>（3）二者都没有不允许</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>​    </p>
+<p>​    </p>
+<p>​     </p>
 
         
       
@@ -416,6 +472,32 @@
         
           <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
         </a>
       </div>
     
