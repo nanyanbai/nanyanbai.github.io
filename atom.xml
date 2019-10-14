@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>岩柏的博客</title>
+  <title>岩柏</title>
   
-  
+  <subtitle>从不羡慕别人的优秀，因为相信自己也可以优秀。闲下来时看看书，书本里的故事，总有你学到的人生。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nanyanbai.github.io/"/>
