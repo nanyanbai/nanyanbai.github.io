@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nanyanbai.github.io/"/>
-  <updated>2019-10-14T06:49:06.847Z</updated>
+  <updated>2019-10-14T07:40:08.965Z</updated>
   <id>http://nanyanbai.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack</title>
+    <link href="http://nanyanbai.github.io/2019/10/14/webpack/"/>
+    <id>http://nanyanbai.github.io/2019/10/14/webpack/</id>
+    <published>2019-10-14T02:15:30.000Z</published>
+    <updated>2019-10-14T07:40:08.965Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="webpack-介绍"><a href="#webpack-介绍" class="headerlink" title="webpack 介绍"></a>webpack 介绍</h2><ol><li><p>了解webpack相关</p><ul><li>什么是webpack<br>webpack是一个前端资源加载/打包工具。它将根据模块的依赖关系进行静态分析，然后将这些模块安装指定的规则生成对应的静态资源。</li><li>安装<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install   webpack-cli   -g  / cnpm i   webpack-cli   -g</span><br></pre></td></tr></table></figure></li></ul><blockquote><p>注：<br>webpack3 升级webpack4<br>卸载相关包后重新安装， 再根据提示更新相关的包<br>npm uninstall webpack-dev-server  webpack-merge  -D<br>npm i  webpack webpack-dev-server  webpack-merge  webpack-cli  -D</p></blockquote><ul><li>基本使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webpack  输入文件.js   输出文件.js</span><br></pre></td></tr></table></figure></li></ul></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;webpack-介绍&quot;&gt;&lt;a href=&quot;#webpack-介绍&quot; class=&quot;headerlink&quot; title=&quot;webpack 介绍&quot;&gt;&lt;/a&gt;webpack 介绍&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;了解webpack相关&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;什么是w
+      
+    
+    </summary>
+    
+    
+      <category term="webpack" scheme="http://nanyanbai.github.io/categories/webpack/"/>
+    
+    
+      <category term="webpack" scheme="http://nanyanbai.github.io/tags/webpack/"/>
+    
+  </entry>
   
   <entry>
     <title>linux从入门到精通配套笔记</title>

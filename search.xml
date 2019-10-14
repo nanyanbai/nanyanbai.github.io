@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>webpack</title>
+    <url>/2019/10/14/webpack/</url>
+    <content><![CDATA[<h2 id="webpack-介绍"><a href="#webpack-介绍" class="headerlink" title="webpack 介绍"></a>webpack 介绍</h2><ol>
+<li><p>了解webpack相关</p>
+<ul>
+<li>什么是webpack<br>webpack是一个前端资源加载/打包工具。它将根据模块的依赖关系进行静态分析，然后将这些模块安装指定的规则生成对应的静态资源。</li>
+<li>安装<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install   webpack-cli   -g  / cnpm i   webpack-cli   -g</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<blockquote>
+<p>注：<br>webpack3 升级webpack4<br>卸载相关包后重新安装， 再根据提示更新相关的包<br>npm uninstall webpack-dev-server  webpack-merge  -D<br>npm i  webpack webpack-dev-server  webpack-merge  webpack-cli  -D</p>
+</blockquote>
+<ul>
+<li>基本使用<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">webpack  输入文件.js   输出文件.js</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>webpack</category>
+      </categories>
+      <tags>
+        <tag>webpack</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux从入门到精通配套笔记</title>
     <url>/2019/10/14/linux%E5%85%A5%E9%97%A8/</url>
     <content><![CDATA[<p>一.linux操作基本快捷键<br> 1.history –&gt;查看用户之前操作过的一些命令<br> 2.Ctrl+p –&gt; 比如你写的一个命令很长，记不住，可以用这个命令向上查看<br> 3.Ctrl+b –&gt; 是让光标向前移动（左移动一个字母）<br> 4.Ctrl+f –&gt; 是让光标向后移动（右移动一个字母）<br> 5.Ctrl+a –&gt; 光标移到行首<br> 6.Ctrl+e –&gt; 光标移到行尾<br> 7.Ctrl+c –&gt; 杀死当前进程<br> 8.Ctrl+L –&gt; 清屏，相当于clear<br> 9.pwd –&gt;查看当前在那个目录下<br> 10.mkdir –&gt; 创建一个目录 mkdir 后面跟要创建的文件名<br>  注意：<br>    在创建一个目录后，如果还想在它的目录下在创建下级目录，不能用<br>    mkdir/test1/test2/test3 的方式创建目录的。</p>
